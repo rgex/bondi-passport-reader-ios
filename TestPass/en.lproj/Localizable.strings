@@ -1,0 +1,53 @@
+/* 
+  Localizable.strings
+  TestPass
+
+  Created by Jan Moritz on 23.09.19.
+  Copyright © 2019 Bondi. All rights reserved.
+*/
+
+"Place the device on the innercover of the passport" = "Hold the device on the innercover of the passport";
+
+"Error" = "Error";
+
+"Please provide a passport number" = "Please provide a passport number";
+
+"Passport number is too long" = "Passport number is too long";
+
+"Passport number is too short" = "Passport number is too short";
+
+"Please provide a date of expiry" = "Please provide a date of expiry";
+
+"Please provide a date of birth" = "Please provide a date of birth";
+
+"Done" = "Done";
+
+"Cancel" = "Cancel";
+
+"Saved!" = "Saved!";
+
+"Your passport image has been saved to your photos" = "Your passport image has been saved to your photos";
+
+"Save error" = "Save error";
+
+"Country" = "Country";
+
+"Passport Nb." = "Passport Nb.";
+
+"Name" = "Name";
+
+"Gender" = "Gender";
+
+"Date of birth" = "Date of birth";
+
+"Date of expiry" = "Date of expiry";
+
+"Reading failed, check the passport number, date of birth and date of expiry" = "Reading failed, check the passport number, date of birth and date of expiry";
+
+"Reading" = "Reading";
+
+"M" = "Male";
+
+"F" = "Female";
+
+"Creation date" = "Creation date";

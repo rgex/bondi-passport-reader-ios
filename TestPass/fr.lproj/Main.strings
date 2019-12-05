@@ -1,0 +1,15 @@
+
+/* Class = "UIButton"; normalTitle = "Start Scan"; ObjectID = "DPC-CD-MkF"; */
+"DPC-CD-MkF.normalTitle" = "Lancer la lecture NFC";
+
+/* Class = "UILabel"; text = "Passport number"; ObjectID = "HUk-EA-VMV"; */
+"HUk-EA-VMV.text" = "N° du Passport";
+
+/* Class = "UILabel"; text = "Date of expiry"; ObjectID = "JOQ-6G-oiE"; */
+"JOQ-6G-oiE.text" = "Date d'expiration";
+
+/* Class = "UILabel"; text = "Date of birth"; ObjectID = "RcB-Ui-cA7"; */
+"RcB-Ui-cA7.text" = "Date de naissance";
+
+/* Class = "UIButton"; normalTitle = "Save image"; ObjectID = "s0Z-oa-9eu"; */
+"s0Z-oa-9eu.normalTitle" = "Enregistrer l'image";

@@ -1,0 +1,507 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		7A03C1FD233D64A700C3CFCC /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7A03C1FF233D64A700C3CFCC /* InfoPlist.strings */; };
+		7A03C207233EA09E00C3CFCC /* PKCS7Parser.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A03C205233EA09E00C3CFCC /* PKCS7Parser.cpp */; };
+		7A38496322AEBDE4002461D2 /* Modules in Resources */ = {isa = PBXBuildFile; fileRef = 7A38496222AEBDE4002461D2 /* Modules */; };
+		7A38496922AEBF9F002461D2 /* libcrypto.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 7A38496822AEBF6D002461D2 /* libcrypto.a */; };
+		7A38496B22AEC09D002461D2 /* Tools.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38496A22AEC09D002461D2 /* Tools.swift */; };
+		7A38496D22AEC71D002461D2 /* Reader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A38496C22AEC71D002461D2 /* Reader.swift */; };
+		7A83C33822B051F200A6ECA1 /* PassportCrypto.cpp in Sources */ = {isa = PBXBuildFile; fileRef = 7A83C33622B051F200A6ECA1 /* PassportCrypto.cpp */; };
+		7A83C33A22B0D2EB00A6ECA1 /* OCPCWrapper.mm in Sources */ = {isa = PBXBuildFile; fileRef = 7A83C33922B0D2EB00A6ECA1 /* OCPCWrapper.mm */; };
+		7A83C33E22BCC99800A6ECA1 /* LDSParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A83C33D22BCC99800A6ECA1 /* LDSParser.swift */; };
+		7A83C34022BCF4B200A6ECA1 /* Iso19794Parser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A83C33F22BCF4B200A6ECA1 /* Iso19794Parser.swift */; };
+		7A83C34222BCF54600A6ECA1 /* MRZParser.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A83C34122BCF54600A6ECA1 /* MRZParser.swift */; };
+		7A83C34422BEB3F900A6ECA1 /* ResultViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A83C34322BEB3F900A6ECA1 /* ResultViewController.swift */; };
+		7AA81C6E233841D20012EDFE /* PassportDataFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AA81C6D233841D20012EDFE /* PassportDataFormatter.swift */; };
+		7AA81C7723396D220012EDFE /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 7AA81C7923396D220012EDFE /* Localizable.strings */; };
+		7AB2F19F22AD548800E9EBA2 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2F19E22AD548800E9EBA2 /* AppDelegate.swift */; };
+		7AB2F1A122AD548800E9EBA2 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2F1A022AD548800E9EBA2 /* SceneDelegate.swift */; };
+		7AB2F1A322AD548800E9EBA2 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2F1A222AD548800E9EBA2 /* ViewController.swift */; };
+		7AB2F1A622AD548800E9EBA2 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB2F1A422AD548800E9EBA2 /* Main.storyboard */; };
+		7AB2F1A822AD548900E9EBA2 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7AB2F1A722AD548900E9EBA2 /* Assets.xcassets */; };
+		7AB2F1AB22AD548900E9EBA2 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 7AB2F1A922AD548900E9EBA2 /* LaunchScreen.storyboard */; };
+		7AB2F1B422AD69E100E9EBA2 /* APDUTranscripter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2F1B322AD69E100E9EBA2 /* APDUTranscripter.swift */; };
+		7AB2F1B722ADAF7900E9EBA2 /* BacKeys.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2F1B622ADAF7900E9EBA2 /* BacKeys.swift */; };
+		7AB2F1BD22ADB8E900E9EBA2 /* PassportCryptoWrapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7AB2F1BC22ADB8E900E9EBA2 /* PassportCryptoWrapper.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		7A03C1FE233D64A700C3CFCC /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A03C200233D64FB00C3CFCC /* Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		7A03C202233D650C00C3CFCC /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A03C203233D650D00C3CFCC /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/InfoPlist.strings; sourceTree = "<group>"; };
+		7A03C205233EA09E00C3CFCC /* PKCS7Parser.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = PKCS7Parser.cpp; sourceTree = "<group>"; };
+		7A03C206233EA09E00C3CFCC /* PKCS7Parser.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PKCS7Parser.h; sourceTree = "<group>"; };
+		7A38496222AEBDE4002461D2 /* Modules */ = {isa = PBXFileReference; lastKnownFileType = folder; path = Modules; sourceTree = "<group>"; };
+		7A38496522AEBEA8002461D2 /* OpenSSL */ = {isa = PBXFileReference; lastKnownFileType = folder; path = OpenSSL; sourceTree = "<group>"; };
+		7A38496822AEBF6D002461D2 /* libcrypto.a */ = {isa = PBXFileReference; lastKnownFileType = archive.ar; name = libcrypto.a; path = OpenSSL/lib/libcrypto.a; sourceTree = "<group>"; };
+		7A38496A22AEC09D002461D2 /* Tools.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tools.swift; sourceTree = "<group>"; };
+		7A38496C22AEC71D002461D2 /* Reader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Reader.swift; sourceTree = "<group>"; };
+		7A83C33522B051F100A6ECA1 /* TestPass-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "TestPass-Bridging-Header.h"; sourceTree = "<group>"; };
+		7A83C33622B051F200A6ECA1 /* PassportCrypto.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; path = PassportCrypto.cpp; sourceTree = "<group>"; };
+		7A83C33722B051F200A6ECA1 /* PassportCrypto.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PassportCrypto.h; sourceTree = "<group>"; };
+		7A83C33922B0D2EB00A6ECA1 /* OCPCWrapper.mm */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.objcpp; path = OCPCWrapper.mm; sourceTree = "<group>"; };
+		7A83C33B22B0D2F900A6ECA1 /* OCPCWrapper.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = OCPCWrapper.h; sourceTree = "<group>"; };
+		7A83C33D22BCC99800A6ECA1 /* LDSParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LDSParser.swift; sourceTree = "<group>"; };
+		7A83C33F22BCF4B200A6ECA1 /* Iso19794Parser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Iso19794Parser.swift; sourceTree = "<group>"; };
+		7A83C34122BCF54600A6ECA1 /* MRZParser.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MRZParser.swift; sourceTree = "<group>"; };
+		7A83C34322BEB3F900A6ECA1 /* ResultViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResultViewController.swift; sourceTree = "<group>"; };
+		7AA81C6D233841D20012EDFE /* PassportDataFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportDataFormatter.swift; sourceTree = "<group>"; };
+		7AA81C7123384A4C0012EDFE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Main.strings; sourceTree = "<group>"; };
+		7AA81C7223384A4C0012EDFE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7AA81C7323384A530012EDFE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Main.strings; sourceTree = "<group>"; };
+		7AA81C7423384A530012EDFE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		7AA81C7823396D220012EDFE /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7AA81C7A23396D360012EDFE /* fr */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = fr; path = fr.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7AA81C7B23396D360012EDFE /* de */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = de; path = de.lproj/Localizable.strings; sourceTree = "<group>"; };
+		7AB2F19B22AD548800E9EBA2 /* Bondi Reader.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Bondi Reader.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		7AB2F19E22AD548800E9EBA2 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		7AB2F1A022AD548800E9EBA2 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		7AB2F1A222AD548800E9EBA2 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		7AB2F1A522AD548800E9EBA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		7AB2F1A722AD548900E9EBA2 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		7AB2F1AA22AD548900E9EBA2 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		7AB2F1B222AD552D00E9EBA2 /* TestPass.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = TestPass.entitlements; sourceTree = "<group>"; };
+		7AB2F1B322AD69E100E9EBA2 /* APDUTranscripter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APDUTranscripter.swift; sourceTree = "<group>"; };
+		7AB2F1B622ADAF7900E9EBA2 /* BacKeys.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BacKeys.swift; sourceTree = "<group>"; };
+		7AB2F1BC22ADB8E900E9EBA2 /* PassportCryptoWrapper.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PassportCryptoWrapper.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		7AB2F19822AD548800E9EBA2 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7A38496922AEBF9F002461D2 /* libcrypto.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		7A38496722AEBF6C002461D2 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				7A38496822AEBF6D002461D2 /* libcrypto.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		7A83C33C22BCC98000A6ECA1 /* Parser */ = {
+			isa = PBXGroup;
+			children = (
+				7A83C33D22BCC99800A6ECA1 /* LDSParser.swift */,
+				7A83C33F22BCF4B200A6ECA1 /* Iso19794Parser.swift */,
+				7A83C34122BCF54600A6ECA1 /* MRZParser.swift */,
+			);
+			path = Parser;
+			sourceTree = "<group>";
+		};
+		7AA81C6C233841990012EDFE /* PassportDataFormatter */ = {
+			isa = PBXGroup;
+			children = (
+				7AA81C6D233841D20012EDFE /* PassportDataFormatter.swift */,
+			);
+			path = PassportDataFormatter;
+			sourceTree = "<group>";
+		};
+		7AB2F19222AD548800E9EBA2 = {
+			isa = PBXGroup;
+			children = (
+				7A38496522AEBEA8002461D2 /* OpenSSL */,
+				7AB2F19D22AD548800E9EBA2 /* TestPass */,
+				7AB2F19C22AD548800E9EBA2 /* Products */,
+				7A38496722AEBF6C002461D2 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		7AB2F19C22AD548800E9EBA2 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				7AB2F19B22AD548800E9EBA2 /* Bondi Reader.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		7AB2F19D22AD548800E9EBA2 /* TestPass */ = {
+			isa = PBXGroup;
+			children = (
+				7AA81C7923396D220012EDFE /* Localizable.strings */,
+				7A38496222AEBDE4002461D2 /* Modules */,
+				7AB2F1B222AD552D00E9EBA2 /* TestPass.entitlements */,
+				7AB2F19E22AD548800E9EBA2 /* AppDelegate.swift */,
+				7AB2F1A022AD548800E9EBA2 /* SceneDelegate.swift */,
+				7AB2F1A222AD548800E9EBA2 /* ViewController.swift */,
+				7A83C34322BEB3F900A6ECA1 /* ResultViewController.swift */,
+				7AB2F1B322AD69E100E9EBA2 /* APDUTranscripter.swift */,
+				7AB2F1B522ADAF6300E9EBA2 /* PassportReader */,
+				7AB2F1A422AD548800E9EBA2 /* Main.storyboard */,
+				7AB2F1A722AD548900E9EBA2 /* Assets.xcassets */,
+				7AB2F1A922AD548900E9EBA2 /* LaunchScreen.storyboard */,
+				7A03C200233D64FB00C3CFCC /* Info.plist */,
+				7A03C1FF233D64A700C3CFCC /* InfoPlist.strings */,
+			);
+			path = TestPass;
+			sourceTree = "<group>";
+		};
+		7AB2F1B522ADAF6300E9EBA2 /* PassportReader */ = {
+			isa = PBXGroup;
+			children = (
+				7AA81C6C233841990012EDFE /* PassportDataFormatter */,
+				7A83C33C22BCC98000A6ECA1 /* Parser */,
+				7A83C33622B051F200A6ECA1 /* PassportCrypto.cpp */,
+				7A83C33722B051F200A6ECA1 /* PassportCrypto.h */,
+				7AB2F1B622ADAF7900E9EBA2 /* BacKeys.swift */,
+				7AB2F1BC22ADB8E900E9EBA2 /* PassportCryptoWrapper.swift */,
+				7A38496A22AEC09D002461D2 /* Tools.swift */,
+				7A38496C22AEC71D002461D2 /* Reader.swift */,
+				7A83C33522B051F100A6ECA1 /* TestPass-Bridging-Header.h */,
+				7A83C33922B0D2EB00A6ECA1 /* OCPCWrapper.mm */,
+				7A83C33B22B0D2F900A6ECA1 /* OCPCWrapper.h */,
+				7A03C205233EA09E00C3CFCC /* PKCS7Parser.cpp */,
+				7A03C206233EA09E00C3CFCC /* PKCS7Parser.h */,
+			);
+			path = PassportReader;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		7AB2F19A22AD548800E9EBA2 /* TestPass */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 7AB2F1AF22AD548900E9EBA2 /* Build configuration list for PBXNativeTarget "TestPass" */;
+			buildPhases = (
+				7AB2F19722AD548800E9EBA2 /* Sources */,
+				7AB2F19822AD548800E9EBA2 /* Frameworks */,
+				7AB2F19922AD548800E9EBA2 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TestPass;
+			productName = TestPass;
+			productReference = 7AB2F19B22AD548800E9EBA2 /* Bondi Reader.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		7AB2F19322AD548800E9EBA2 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1100;
+				LastUpgradeCheck = 1100;
+				ORGANIZATIONNAME = Bondi;
+				TargetAttributes = {
+					7AB2F19A22AD548800E9EBA2 = {
+						CreatedOnToolsVersion = 11.0;
+						LastSwiftMigration = 1100;
+					};
+				};
+			};
+			buildConfigurationList = 7AB2F19622AD548800E9EBA2 /* Build configuration list for PBXProject "TestPass" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+				fr,
+				de,
+			);
+			mainGroup = 7AB2F19222AD548800E9EBA2;
+			productRefGroup = 7AB2F19C22AD548800E9EBA2 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				7AB2F19A22AD548800E9EBA2 /* TestPass */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		7AB2F19922AD548800E9EBA2 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AA81C7723396D220012EDFE /* Localizable.strings in Resources */,
+				7A03C1FD233D64A700C3CFCC /* InfoPlist.strings in Resources */,
+				7A38496322AEBDE4002461D2 /* Modules in Resources */,
+				7AB2F1AB22AD548900E9EBA2 /* LaunchScreen.storyboard in Resources */,
+				7AB2F1A822AD548900E9EBA2 /* Assets.xcassets in Resources */,
+				7AB2F1A622AD548800E9EBA2 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		7AB2F19722AD548800E9EBA2 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7AB2F1BD22ADB8E900E9EBA2 /* PassportCryptoWrapper.swift in Sources */,
+				7AB2F1B422AD69E100E9EBA2 /* APDUTranscripter.swift in Sources */,
+				7A38496D22AEC71D002461D2 /* Reader.swift in Sources */,
+				7AB2F1A322AD548800E9EBA2 /* ViewController.swift in Sources */,
+				7A83C33E22BCC99800A6ECA1 /* LDSParser.swift in Sources */,
+				7A03C207233EA09E00C3CFCC /* PKCS7Parser.cpp in Sources */,
+				7AB2F19F22AD548800E9EBA2 /* AppDelegate.swift in Sources */,
+				7A38496B22AEC09D002461D2 /* Tools.swift in Sources */,
+				7AB2F1B722ADAF7900E9EBA2 /* BacKeys.swift in Sources */,
+				7A83C34222BCF54600A6ECA1 /* MRZParser.swift in Sources */,
+				7A83C34422BEB3F900A6ECA1 /* ResultViewController.swift in Sources */,
+				7AB2F1A122AD548800E9EBA2 /* SceneDelegate.swift in Sources */,
+				7A83C34022BCF4B200A6ECA1 /* Iso19794Parser.swift in Sources */,
+				7AA81C6E233841D20012EDFE /* PassportDataFormatter.swift in Sources */,
+				7A83C33A22B0D2EB00A6ECA1 /* OCPCWrapper.mm in Sources */,
+				7A83C33822B051F200A6ECA1 /* PassportCrypto.cpp in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		7A03C1FF233D64A700C3CFCC /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7A03C1FE233D64A700C3CFCC /* en */,
+				7A03C202233D650C00C3CFCC /* fr */,
+				7A03C203233D650D00C3CFCC /* de */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+		7AA81C7923396D220012EDFE /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AA81C7823396D220012EDFE /* en */,
+				7AA81C7A23396D360012EDFE /* fr */,
+				7AA81C7B23396D360012EDFE /* de */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		7AB2F1A422AD548800E9EBA2 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AB2F1A522AD548800E9EBA2 /* Base */,
+				7AA81C7123384A4C0012EDFE /* fr */,
+				7AA81C7323384A530012EDFE /* de */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		7AB2F1A922AD548900E9EBA2 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				7AB2F1AA22AD548900E9EBA2 /* Base */,
+				7AA81C7223384A4C0012EDFE /* fr */,
+				7AA81C7423384A530012EDFE /* de */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		7AB2F1AD22AD548900E9EBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OpenSSL/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/OpenSSL/lib";
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		7AB2F1AE22AD548900E9EBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(SRCROOT)/OpenSSL/include";
+				IPHONEOS_DEPLOYMENT_TARGET = 13.0;
+				LIBRARY_SEARCH_PATHS = "$(PROJECT_DIR)/OpenSSL/lib";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_INCLUDE_PATHS = "$(SRCROOT)/$(TARGET_NAME)";
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		7AB2F1B022AD548900E9EBA2 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TestPass/TestPass.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = U7TB656498;
+				INFOPLIST_FILE = TestPass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bondi.TestPass;
+				PRODUCT_NAME = "Bondi Reader";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestPass/PassportReader/TestPass-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		7AB2F1B122AD548900E9EBA2 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = "AppIcon-1";
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_ENTITLEMENTS = TestPass/TestPass.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 4;
+				DEVELOPMENT_TEAM = U7TB656498;
+				INFOPLIST_FILE = TestPass/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = bondi.TestPass;
+				PRODUCT_NAME = "Bondi Reader";
+				SWIFT_OBJC_BRIDGING_HEADER = "TestPass/PassportReader/TestPass-Bridging-Header.h";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		7AB2F19622AD548800E9EBA2 /* Build configuration list for PBXProject "TestPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AB2F1AD22AD548900E9EBA2 /* Debug */,
+				7AB2F1AE22AD548900E9EBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		7AB2F1AF22AD548900E9EBA2 /* Build configuration list for PBXNativeTarget "TestPass" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				7AB2F1B022AD548900E9EBA2 /* Debug */,
+				7AB2F1B122AD548900E9EBA2 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 7AB2F19322AD548800E9EBA2 /* Project object */;
+}

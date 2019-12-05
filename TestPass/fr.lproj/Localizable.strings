@@ -1,0 +1,53 @@
+/* 
+  Localizable.strings
+  TestPass
+
+  Created by Jan Moritz on 23.09.19.
+  Copyright © 2019 Bondi. All rights reserved.
+*/
+
+"Place the device on the innercover of the passport" = "Placez l'iPhone sur la couverture intérieure de votre passport";
+
+"Error" = "Erreur";
+
+"Please provide a passport number" = "Numéro de passport manquant";
+
+"Passport number is too long" = "Le numéro de passport est trop long";
+
+"Passport number is too short" = "Le numéro de passport est trop court";
+
+"Please provide a date of expiry" = "Date d'expiration manquante";
+
+"Please provide a date of birth" = "Date de naissance manquante";
+
+"Done" = "Appliquer";
+
+"Cancel" = "Annuler";
+
+"Saved!" = "Enregistré!";
+
+"Your passport image has been saved to your photos" = "L'image du passport a été enregistré dans vos photos";
+
+"Save error" = "Erreur d'enregistrement";
+
+"Country" = "Pays";
+
+"Passport Nb." = "N° du Passport";
+
+"Name" = "Nom";
+
+"Gender" = "Sexe";
+
+"Date of birth" = "Date de naissance";
+
+"Date of expiry" = "Date d'expiration";
+
+"Reading failed, check the passport number, date of birth and date of expiry" = "Echec, Verifiez que le numéro de passport, la date de naissance et d'expiration sont correct";
+
+"Reading" = "Lecture";
+
+"M" = "Homme";
+
+"F" = "Femme";
+
+"Creation date" = "Date de création";
